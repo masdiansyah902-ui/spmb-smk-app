@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="id-ID">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web Aplikasi SPMB SMK Terintegrasi">
+    <meta name="theme-color" content="#ffffff">
+    <title>Web Aplikasi SPMB SMK Terintegrasi</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="root">
+        <main class="main-container">
+            <div class="content-wrapper">
+                <section id="hero-section" class="hero-section">
+                    <div class="hero-container">
+                        <div class="hero-content">
+                            <div class="hero-background">
+                                <div class="background-shape"></div>
+                            </div>
+                            
+                            <div class="hero-inner">
+                                <div class="hero-text-area">
+                                    <h1 class="hero-title">Web Aplikasi SPMB SMK Terintegrasi</h1>
+                                    <p class="hero-subtitle">Salinan dari Web Aplikasi SPMB SMK Terintegrasi Google Sheets</p>
+                                </div>
+                                
+                                <div class="hero-embed">
+                                    <iframe 
+                                        id="spmb-embed"
+                                        class="embed-frame"
+                                        src="https://www.canva-hosted-embed.com/codelet/c1wqxva40v9jcc26/index.html"
+                                        title="Formulir SPMB SMK"
+                                        sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-popups-to-escape-sandbox"
+                                        allow="clipboard-write">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <button id="terms-btn" class="footer-pill footer-pill-secondary" type="button">
+                    Syarat & Dukungan
+                </button>
+                <button id="privacy-btn" class="footer-pill footer-pill-secondary" type="button">
+                    Kebijakan Privasi
+                </button>
+                <a class="footer-pill footer-pill-primary footer-pill-link footer-pill-end" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   href="https://www.canva.com" 
+                   aria-label="Didesain dengan Canva">
+                    <span>Didesain dengan Canva</span>
+                </a>
+            </div>
+
+            <!-- Modals -->
+            <div id="modal-backdrop" class="modal-backdrop"></div>
+            
+            <!-- Terms Modal -->
+            <div id="terms-modal" class="modal" role="dialog" aria-labelledby="terms-title" aria-hidden="true">
+                <div class="modal-content">
+                    <h2 id="terms-title" class="modal-title">Syarat & Dukungan</h2>
+                    <p class="modal-body">
+                        Situs web ini dibuat di Canva, tetapi isinya adalah Konten Buatan Pengguna yang tunduk pada 
+                        <a href="https://www.canva.com/policies/terms-of-use/" target="_blank" rel="noopener noreferrer">Persyaratan Penggunaan</a> kami. 
+                        Jika Anda melihat hal yang melanggar 
+                        <a href="https://www.canva.com/policies/acceptable-use-policy/" target="_blank" rel="noopener noreferrer">kebijakan penggunaan sewajarnya</a>, 
+                        harap laporkan ke tim peninjau konten kami.
+                    </p>
+                    <div class="modal-buttons">
+                        <button id="terms-close-btn" type="button" class="btn btn-secondary">
+                            Tutup
+                        </button>
+                        <button id="report-btn" type="button" class="btn btn-primary">
+                            Laporkan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Privacy Modal -->
+            <div id="privacy-modal" class="modal" role="dialog" aria-labelledby="privacy-title" aria-hidden="true">
+                <div class="modal-content">
+                    <h2 id="privacy-title" class="modal-title">Kebijakan Privasi</h2>
+                    <p class="modal-body">
+                        Data pribadi yang dimasukkan ke dalam situs web ini dapat dikumpulkan dan digunakan sesuai dengan praktik privasi kreator sendiri. 
+                        Lihat <a href="https://www.canva.com/policies/privacy-policy/" target="_blank" rel="noopener noreferrer">Kebijakan Privasi</a> kami 
+                        untuk mempelajari cara Canva memproses data pribadi.
+                    </p>
+                    <div class="modal-buttons">
+                        <button id="privacy-close-btn" type="button" class="btn btn-secondary">
+                            Tutup
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/script.js" defer></script>
+</body>
+</html>
